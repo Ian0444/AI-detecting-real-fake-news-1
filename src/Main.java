@@ -12,7 +12,7 @@ public class FileLoader {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
 
-            // Skip header if dataset has one
+
             br.readLine();
 
             while ((line = br.readLine()) != null) {
